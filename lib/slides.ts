@@ -1,14 +1,14 @@
 export const slides = [
   {
     id: 1,
-    image: "/first.jpg",
+    image: "/first.jpeg",
   },
   {
     id: 2,
-    image: "/second.jpg",
+    image: "/second.webp",
   },
   {
     id: 3,
-    image: "/third.jpg",
+    image: "/third.webp",
   },
 ];

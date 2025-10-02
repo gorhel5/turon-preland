@@ -17,9 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Card Xabar",
-  description:
-    "CardXabar — это выгодно, удобно и безопасно! · Виды информирования о платежах · Возможности в Card Xabar · Последние новости.",
+  title: "Turonbank",
+  description: "Hamma uchun 100 million so'mgacha kredit! Faqat 2%!",
   icons: {
     icon: "/faviconchik.ico",
   },
