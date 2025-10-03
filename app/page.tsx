@@ -1,3 +1,5 @@
+"use client";
+
 declare global {
   interface Window {
     fbq: {
@@ -6,7 +8,7 @@ declare global {
   }
 }
 
-"use client";
+
 
 import "modern-normalize";
 import css from "./Home.module.css";
