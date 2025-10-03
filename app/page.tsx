@@ -9,6 +9,13 @@ import { useLangStore } from "@/lib/stores/langStore";
 
 export default function Home() {
   const { lang } = useLangStore();
+  const pixelTrigger = () => {
+    // Триггер пикселя
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('track', 'Lead');
+    }
+
+  }
   return (
     <div className={css.container}>
       <div className={css.content}>
@@ -37,6 +44,7 @@ export default function Home() {
 
         <div className={css.installSection}>
           <Link
+            onClick={pixelTrigger}
             href={"tg://resolve?domain=MyTuronBankRasmiy"}
             className={css.installButton}
           >
