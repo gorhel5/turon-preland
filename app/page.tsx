@@ -1,3 +1,11 @@
+declare global {
+  interface Window {
+    fbq: {
+      (action: 'track', event: string): void;
+    };
+  }
+}
+
 "use client";
 
 import "modern-normalize";
