@@ -3,12 +3,10 @@
 declare global {
   interface Window {
     fbq: {
-      (action: 'track', event: string): void;
+      (action: "track", event: string): void;
     };
   }
 }
-
-
 
 import "modern-normalize";
 import css from "./Home.module.css";
@@ -21,13 +19,12 @@ export default function Home() {
   const { lang } = useLangStore();
   const pixelTrigger = () => {
     // Триггер пикселя
-    if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'Lead');
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("track", "Lead");
     }
-
-  }
+  };
   return (
-    <div className={css.container}>
+    <main className={css.main}>
       <div className={css.content}>
         <ImagesSwiper />
 
@@ -75,6 +72,6 @@ export default function Home() {
 
         <Footer />
       </div>
-    </div>
+    </main>
   );
 }
