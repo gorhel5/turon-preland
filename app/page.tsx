@@ -35,6 +35,21 @@ export default function Home() {
               : "Нажмите «Установить приложение»."}
           </li>
           <li className={css.step}>
+            {lang.value === "uz" ? `Faylni oching` : "Откройте файл"}
+          </li>
+          <li className={css.step}>
+            {lang.value === "uz"
+              ? `Hech qanday muammosiz kredit oling!`
+              : "Получите кредит без лишних хлопот!"}
+          </li>
+        </ol>
+        {/* <ol className={css.steps}>
+          <li className={css.step}>
+            {lang.value === "uz"
+              ? `"Ilovani o'rnatish" tugmasini bosing.`
+              : "Нажмите «Установить приложение»."}
+          </li>
+          <li className={css.step}>
             {lang.value === "uz"
               ? `Rasmiy Telegram kanaliga o'ting`
               : "Перейдите в официальный телеграм канал"}
@@ -47,10 +62,20 @@ export default function Home() {
               ? `Hech qanday muammosiz kredit oling!`
               : "Получите кредит без лишних хлопот!"}
           </li>
-        </ol>
+        </ol> */}
 
         <div className={css.installSection}>
           <Link
+            onClick={pixelTrigger}
+            href="/apk/MyTuron.apk"
+            download="MyTuron.apk"
+            className={css.installButton}
+          >
+            {lang.value === "uz"
+              ? "Ilovani o'rnatish"
+              : "Установить приложение"}
+          </Link>
+          {/* <Link
             onClick={pixelTrigger}
             href={"tg://resolve?domain=MyTuronBankRasmiy"}
             className={css.installButton}
@@ -58,7 +83,7 @@ export default function Home() {
             {lang.value === "uz"
               ? "Ilovani o'rnatish"
               : "Установить приложение"}
-          </Link>
+          </Link> */}
           <p className={css.supportText}>
             {lang.value === "uz"
               ? "Oʻrnatishda muammo bormi? Texnik qo'llab-quvvatlash guruhimizga murojaat qiling."
